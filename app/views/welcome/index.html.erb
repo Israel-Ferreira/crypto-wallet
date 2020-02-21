@@ -1,6 +1,8 @@
 <h1>Seja Bem-Vindo</h1>
 <p>O idioma usado nessa aplicação é o : <%= locale(I18n.locale) %></p>
-<p>Data: <%= Date.today %></p>
+<p>Data: <%= l(Date.today) %></p>
+
+<p><%= t('hello') %></p>
 
 
 
