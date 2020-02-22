@@ -31,6 +31,15 @@
 
 en:
   hello: "Hello world"
+  are_you_sure: 'Are you sure ?'
+  coins: 'Coins'
+  mining_types: "Mining Types"
+  table_headers:
+    common:
+      acronym: 'Acronym'
+      description: 'Description'
+    coins:
+      image: 'Image'
   links:
     show: 'Show'
     edit: 'Edit'

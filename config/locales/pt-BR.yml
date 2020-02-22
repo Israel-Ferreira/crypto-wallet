@@ -1,5 +1,14 @@
 pt-BR:
   hello: "Olá Mundo!"
+  are_you_sure: 'Você tem certeza ?'
+  coins: 'Moedas'
+  mining_types: "Tipos de mineração"
+  table_headers:
+    common:
+      acronym: 'Sigla'
+      description: 'Descrição'
+    coins:
+      image: 'Imagem'
   links:
     show: 'Mostrar'
     edit: 'Editar'
