@@ -1,6 +1,7 @@
 pt-BR:
   hello: "Olá Mundo!"
   are_you_sure: 'Você tem certeza ?'
+  actual_locale: "Português - Brasil"
   coins: 'Moedas'
   mining_types: "Tipos de mineração"
   table_headers:
@@ -13,3 +14,28 @@ pt-BR:
     show: 'Mostrar'
     edit: 'Editar'
     destroy: 'Apagar'
+  activerecord:
+    models:
+      coin:
+        one: "Moeda"
+        other: "Moedas"
+      mining_type:
+        one: "Tipo de Mineração"
+        other: "Tipos de Mineração"
+    attributes:
+      coin:
+        id: "Código"
+        description: "Descrição"
+        acronym: "Sigla"
+        url_image: "URL da Imagem"
+        mining_type: "Tipo de Mineração"
+        mining_type_id: "ID do Tipo de Mineração"
+        update_at: "Atualizado em"
+        created_at: "Criado em"
+      mining_type:
+        id: "Código"
+        description: "Descrição"
+        acronym: "Sigla"
+        update_at: "Atualizado em"
+        created_at: "Criado em"
+      

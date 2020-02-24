@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t('mining_types') %></h1>
+<h1><%= singular_or_plural(@mining_types) %></h1>
 
 <table>
   <thead>
     <tr>
-      <th><%= t('table_headers.common.description') %></th>
-      <th><%= t('table_headers.common.acronym') %></th>
+      <th><%= attr_name(@mining_types, :description) %></th>
+      <th><%= attr_name(@mining_types, :acronym) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>

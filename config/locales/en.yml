@@ -34,6 +34,7 @@ en:
   are_you_sure: 'Are you sure ?'
   coins: 'Coins'
   mining_types: "Mining Types"
+  actual_locale: "English (International)"
   table_headers:
     common:
       acronym: 'Acronym'
@@ -44,3 +45,16 @@ en:
     show: 'Show'
     edit: 'Edit'
     destroy: 'Destroy'
+  activerecord:
+    models:
+      coin: Coin
+      mining_type: Mining Type
+    attributes:
+      coin:
+        description: "Description"
+        acronym: "Acronym"
+        image: "Image"
+      mining_type:
+        description: "Description"
+        acronym: "Acronym"
+      

@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t('coins') %></h1>
+<h1><%= singular_or_plural(@coins) %></h1>
 
 <table>
   <thead>
     <tr>
-      <th><%= t('table_headers.common.description') %></th>
-      <th><%= t('table_headers.common.acronym') %></th>
-      <th><%= t('table_headers.coins.image') %></th>
+      <th><%= attr_name(@coins,:description) %></th>
+      <th><%= attr_name(@coins,:acronym) %></th>
+      <th><%= attr_name(@coins,:url_image) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
