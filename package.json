@@ -1,5 +1,13 @@
 {
   "name": "crypto_wallet",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "notify-js-legacy": "^0.4.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Israel-Ferreira/crypto-wallet.git",
+  "author": "Israel-Ferreira <israel.souza5@fatec.sp.gov.br>",
+  "license": "MIT"
 }
