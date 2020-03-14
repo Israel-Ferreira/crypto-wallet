@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= singular_or_plural(@mining_types) %></h1>
+<h3><%= singular_or_plural(@mining_types, @mining_types.size) %></h3>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= attr_name(@mining_types, :description) %></th>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Mining Type', new_mining_type_path %>
+<%= link_to t('links.new', model_name: singular_or_plural(@mining_types)), new_mining_type_path, class: "btn btn-primary" %>

@@ -31,10 +31,17 @@
 
 en:
   hello: "Hello world"
+  welcome: "Welcome"
+  add_coins: "New Coin"
+  messages:
+    welcome_message: 'This is CryptoWallet, an application to create and track your cryptocurrencies'
+    menu_message: 'To Begin, select one of options below:'
   are_you_sure: 'Are you sure ?'
   coins: 'Coins'
   mining_types: "Mining Types"
   actual_locale: "English (International)"
+  coin:
+    create: "Criar Moeda"
   table_headers:
     common:
       acronym: 'Acronym'
@@ -45,10 +52,25 @@ en:
     show: 'Show'
     edit: 'Edit'
     destroy: 'Destroy'
+    new: "New %{model_name}"
+    back: "Back"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  editing:
+    coin: "Editing Coin"
+    mining_type: "Editing Mining Type"
+  show:
+    coin: "Show Coin"
+    mining_type: "Show Mining Type"
   activerecord:
     models:
-      coin: Coin
-      mining_type: Mining Type
+      coin:
+        one: Coin
+        other: Coins
+      mining_type: 
+        one: Mining Type
+        other: Mining Types
     attributes:
       coin:
         description: "Description"

@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= singular_or_plural(@coins) %></h1>
+<h2><%= singular_or_plural(@coins, @coins.size) %></h2>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= attr_name(@coins,:description) %></th>
@@ -30,4 +30,5 @@
 
 <br>
 
-<%= link_to 'Nova Moeda', new_coin_path %>
+
+<%= link_to t('links.new', :model_name => singular_or_plural(@coins)), new_coin_path, class: 'btn btn-primary' %>

@@ -13,12 +13,34 @@
   </head>
 
   <body>
-    <h1>CryptoWallet</h1>
-    <%= yield %>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CryptoWallet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <%= link_to 'Home', root_path, :class => "nav-link" %>
+            </li>
+            <li>
+              <%= link_to 'Inglês', root_path(:locale => :en), :class => "nav-link" %>
+            </li>
+            <li>
+              <%= link_to 'Português', root_path(:locale => "pt-BR"), :class => "nav-link" %>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
-  <footer>
-    <script>
-      $.notify("Funcionou", "success");
-    </script>
-  </footer>
+  <!--<footer>-->
+  <!--  <script>-->
+  <!--    $.notify("Funcionou", "success");-->
+  <!--  </script>-->
+  <!--</footer>-->
 </html>
